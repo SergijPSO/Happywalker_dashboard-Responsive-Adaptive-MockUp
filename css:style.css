@@ -1,0 +1,280 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; }
+
+.nav {
+  height: 56px;
+  width: 100%;
+  background-color: #273570;
+  display: flex;
+  justify-content: space-between; }
+  .nav .menu {
+    margin-left: 1.5%;
+    display: flex; }
+    .nav .menu .logo {
+      width: 126px;
+      height: 32px;
+      background-image: url("../img/logo.png");
+      margin-top: 12px; }
+  .nav .options {
+    display: flex;
+    width: 250px;
+    justify-content: space-between; }
+    .nav .options li {
+      margin: auto;
+      margin-right: 16px;
+      list-style: none;
+      font-family: "Sourcesemibold";
+      font-size: 16px;
+      color: #ffff; }
+
+.summary {
+  height: 88px;
+  width: 100%;
+  background-color: #ffff;
+  margin-bottom: 24px; }
+  .summary .h_container {
+    font-family: "Bebas";
+    padding-top: 27px;
+    text-transform: uppercase;
+    font-size: 36px;
+    width: 100px;
+    height: 20px;
+    margin-left: 1.5%; }
+
+.content {
+  background-color: #f8f9fa; }
+  .content .box {
+    width: 97%;
+    margin: 0 auto; }
+    .content .box .today {
+      padding-top: 24px;
+      background: #ffff;
+      height: 324px; }
+      .content .box .today .ht_text {
+        margin-left: 1.5%;
+        font-family: "Bebas";
+        text-transform: uppercase;
+        font-size: 24px; }
+      .content .box .today .today_content {
+        padding-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        width: 97%;
+        margin: auto; }
+        .content .box .today .today_content .own_stats {
+          display: flex;
+          width: 50%;
+          height: 248px; }
+          .content .box .today .today_content .own_stats .profile .pro_inf {
+            text-align: center;
+            width: 160px; }
+          .content .box .today .today_content .own_stats .profile .pro_foto {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            padding-bottom: 16px; }
+          .content .box .today .today_content .own_stats .profile .pro_name {
+            color: #222529;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-family: "Bebas";
+            line-height: 32px; }
+          .content .box .today .today_content .own_stats .profile .pro_option {
+            color: #01ce9f;
+            text-transform: uppercase;
+            font-family: "Sourcesemibold";
+            font-size: 16px;
+            line-height: 24px; }
+          .content .box .today .today_content .own_stats .stats {
+            display: flex;
+            margin-left: 17%; }
+            .content .box .today .today_content .own_stats .stats .graph .cell {
+              display: flex;
+              margin-right: 20px;
+              width: 240px;
+              height: 72px;
+              margin: 2px; }
+              .content .box .today .today_content .own_stats .stats .graph .cell img {
+                width: 96px;
+                height: 56px;
+                margin-right: 2%; }
+              .content .box .today .today_content .own_stats .stats .graph .cell .item {
+                padding-left: 0;
+                margin-top: 0; }
+                .content .box .today .today_content .own_stats .stats .graph .cell .item li {
+                  list-style: none; }
+                .content .box .today .today_content .own_stats .stats .graph .cell .item h3 {
+                  padding-left: 0;
+                  margin: 0;
+                  font-size: 48px;
+                  font-family: "Bebas"; }
+                .content .box .today .today_content .own_stats .stats .graph .cell .item p {
+                  font-family: "Bebas";
+                  text-transform: uppercase;
+                  font-size: 16px;
+                  line-height: 24px;
+                  padding-left: 0;
+                  margin-top: 0;
+                  color: #868e95; }
+        .content .box .today .today_content .map {
+          width: 50%;
+          height: 248px; }
+    .content .box .top_wallkers {
+      position: relative;
+      top: 24px;
+      background: #ffff; }
+      .content .box .top_wallkers .top_label {
+        padding-top: 24px;
+        margin: auto;
+        width: 97%;
+        display: flex;
+        justify-content: space-between; }
+        .content .box .top_wallkers .top_label .top_h_text {
+          font-family: "Bebas";
+          font-size: 24px;
+          text-transform: uppercase; }
+
+.btn-group {
+  display: inline-block; }
+
+.btn-group button {
+  clear: none;
+  float: left;
+  width: 176px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  color: #01ce9f;
+  text-transform: uppercase;
+  font-family: "Sourcesemibold";
+  font-size: 16px;
+  background-color: #f1f3f5; }
+  .btn-group button .b1 {
+    border-top-right-radius: 10px; }
+
+button:focus {
+  outline: none; }
+
+button:active {
+  background-color: #01ce9f;
+  color: #f1f3f5;
+  border: none; }
+
+button:hover {
+  background-color: #01ce9f;
+  color: #f1f3f5;
+  border: none; }
+
+.callendar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  width: 192px;
+  background-color: #f1f3f5ee;
+  border-radius: 4px; }
+  .callendar p {
+    font-family: "Sourceregular";
+    font-size: 16px;
+    line-height: 7px;
+    margin-left: 15px; }
+  .callendar img {
+    padding-top: 7px; }
+  .callendar .callendar-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 512px;
+    height: 256px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    top: 15px;
+    right: 5px;
+    z-index: 1; }
+
+.callendar:hover .callendar-content {
+  display: block; }
+
+.search {
+  margin-top: 32px; }
+  .search .search_field {
+    display: flex;
+    padding-bottom: 12px; }
+    .search .search_field input {
+      margin: auto;
+      width: 97%;
+      height: 40px;
+      background: #f1f3f5;
+      border: none;
+      border-radius: 4px;
+      font-family: "Sourceregular";
+      font-size: 14px;
+      text-indent: 32px;
+      background-image: url("../img/search.png");
+      background-position: left 8px top 8px;
+      background-repeat: no-repeat; }
+
+.top_list {
+  width: 97%;
+  margin: auto; }
+  .top_list .top_usr_label {
+    display: flex;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #868e95;
+    font-family: "Sourceregular"; }
+    .top_list .top_usr_label .usr_name, .top_list .top_usr_label .usr_steps, .top_list .top_usr_label .usr_distance, .top_list .top_usr_label .usr_kcal {
+      height: 40px;
+      width: 25%;
+      text-align: center; }
+  .top_list .top_row {
+    display: flex;
+    height: 40px;
+    background: #f1f3f5;
+    margin: auto;
+    border-radius: 4px; }
+    .top_list .top_row .top_cell div {
+      margin-left: 16px;
+      margin-top: 8px; }
+    .top_list .top_row .top_cell {
+      display: flex;
+      width: 25%;
+      height: 40px; }
+      .top_list .top_row .top_cell .cell_numb {
+        width: 24px;
+        height: 24px;
+        background-color: red;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 1.5;
+        font-family: "Sourceregular";
+        color: #fff;
+        font-weight: bold; }
+      .top_list .top_row .top_cell .cell_face {
+        width: 24px;
+        height: 24px;
+        background-color: yellow;
+        border-radius: 50px; }
+      .top_list .top_row .top_cell .cell_star {
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/star.png"); }
+      .top_list .top_row .top_cell .cell_star:hover {
+        background-image: url("../img/starz.png"); }
+      .top_list .top_row .top_cell .cell_name {
+        margin-top: 16px; }
+
+.basement {
+  display: flex;
+  background-color: #f8f9fa;
+  width: 100%;
+  height: 64px;
+  background-image: url("../img/logo-lasoft.png");
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .basement .logosoft {
+    margin: auto; }
+
+/*# sourceMappingURL=css:style.css.map */

@@ -1,0 +1,12 @@
+ @font-face {
+    font-family: "Bebas"; /* Имя шрифта */
+    src: url("../fonts/BebasNeue\ Bold.otf"); /* Путь к файлу со шрифтом */
+   }
+ @font-face {
+    font-family: "Sourceregular"; /* Имя шрифта */
+    src: url("../fonts/Source Sans Pro Regular.ttf"); /* Путь к файлу со шрифтом */
+}
+ @font-face {
+    font-family: "Sourcesemibold"; /* Имя шрифта */
+    src: url("../fonts/SourceSansPro-Semibold.ttf"); /* Путь к файлу со шрифтом */
+}
