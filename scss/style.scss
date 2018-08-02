@@ -11,17 +11,17 @@ background-color:$main_color;
 }
 //default style reset ends
 .content {
-    min-width: 320px;
+    min-width:900px;
     margin:0 auto;
 }
 .nav{
-min-width: 320px;  
-margin: 0 auto;
-height: 56px;
-width: 100%;
-background-color: #273570;
-display:flex;
-justify-content: space-between;
+    min-width:900px;  
+    margin: 0 auto;
+    height: 56px;
+    width: 100%;
+    background-color: #273570;
+    display:flex;
+    justify-content: space-between;
     .menu{
         margin-left:1.5%;
         display:flex;
@@ -47,6 +47,7 @@ justify-content: space-between;
     }
 }
 .summary{
+    min-width:900px;  
     margin: 0 auto;
     height: 88px;
     width: 100%;
@@ -97,8 +98,8 @@ justify-content: space-between;
                        }
                        .pro_foto{
                            width: 100%;
-                           //width: 160px;
-                          // height: 160px;
+                           //width:;
+                          // height:;
                            border-radius:50%;
                            padding-bottom:16px;
                        }
@@ -122,7 +123,7 @@ justify-content: space-between;
                         .graph{
                             .cell{
                                 display:flex;
-                                //width: 240px;
+                                //width: ;
                                 height: 72px;
                                 margin:2px;
                                 img{
@@ -182,43 +183,40 @@ justify-content: space-between;
 }
 //button styles beggins
 .btn-group{
-  display:inline-block;
-}
- button{
-    .b1{
-        border-radius: 10px 0  0 10px;
+    display:inline-block;
+    button{
+        clear: none;
+        float: left;
+        width:176px;
+        height:40px;
+        border:none;
+        color:#01ce9f;
+        text-transform:uppercase;
+        font-family:$main_semibold_font;
+        font-size:1rem;
+        background-color:#f1f3f5;
     }
-    .b2{
-        border-radius: 4px 4px 0;
+    button:focus{
+        outline:none;
     }
-  clear: none;
-  float: left;
-  width:176px;
-  height:40px;
-  border:none;
-  //border-radius:4px;
-  color:#01ce9f;
-  text-transform:uppercase;
-  font-family:$main_semibold_font;
-  font-size:1rem;
-  background-color:#f1f3f5;
-}
-button:focus{
-  outline:none;
-}
-button:active{
-  background-color:#01ce9f;
-  color:#f1f3f5;
-   border:none;
-}
-button:hover{
-  background-color:#01ce9f;
-  color:#f1f3f5;
-   border:none;
+    button:active{
+        background-color:#01ce9f;
+        color:#f1f3f5;
+        border:none;
+    }
+    button:hover{
+        background-color:#01ce9f;
+        color:#f1f3f5;
+        border:none;
+    }
+    button.b1{
+    border-radius: 4px 0  0 4px;
+    }
+    button.b2{
+    border-radius: 0 4px 4px 0;
+    }
 }
 //button styles
-
-
 // callendar styles
 .callendar {
   position: relative;
@@ -252,6 +250,8 @@ button:hover{
 .callendar:hover .callendar-content {
     display: block;
 }
+//callendar styles ends here
+//Search styles starts here!
 .search{
     margin-top:32px;
     .search_field{
@@ -272,7 +272,8 @@ button:hover{
         background-repeat: no-repeat;
         }
     }
-}
+}//Search styles ends here!
+//Top walkers section styles starts here!
 .top_list {
     height: 100%;
     width: 97%;
@@ -284,14 +285,15 @@ button:hover{
         display:flex;
         margin:auto;
         text-transform: uppercase;
-        font-size:1rem;
+        font-size:16px;
         color:#868e95;
         font-family:$main_regular_font;
-       .top_usr_label > div {
-            height:40px;
-            width: 25%;
-            text-align:center;
+        .us{
+        height:40px;
+        width: 25%;
+        text-align:center;
         }
+     
     }
     .top_row{
         font-family:$main_regular_font;
@@ -302,13 +304,14 @@ button:hover{
         border-radius:4px;
         margin-bottom:8px;
       .top_cell div{
-        margin-left:16px;
+        margin-left:3%;
         margin-top:8px;
       }
         .top_cell{
             display:flex;
             width: 25%;
             height: 40px;
+            color:#222529;
             .cell_numb {
                 width: 24px;
                 height: 24px;
@@ -316,7 +319,6 @@ button:hover{
                 text-align:center;
                 line-height: 1.5;
                 color:#868e95;
-               
             }
             .orange{
                 background-color: #fec833;
@@ -330,7 +332,6 @@ button:hover{
                 background-color:#e2815c;
                 color:#fff;
             }
-
             .cell_face{
                 width: 24px;
                 height: 24px;
@@ -356,13 +357,17 @@ button:hover{
             height: 40px;
             width: 25%;
             text-align:center;
+            color:#222529;
         }
     }
 }
+//Top walkers section styles starts here!
+//Here is footer styles
 .footer {
     height: 64px;
-   background-image: url("../img/logo-lasoft.png");
-   background-position: center center;
+    background-image: url("../img/logo-lasoft.png");
+    background-position: center center;
     background-repeat: no-repeat;
 }
+//Footer styles ends
 // media-query section starts here

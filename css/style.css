@@ -4,11 +4,11 @@ body {
   background-color: #f8f9fa; }
 
 .content {
-  min-width: 320px;
+  min-width: 900px;
   margin: 0 auto; }
 
 .nav {
-  min-width: 320px;
+  min-width: 900px;
   margin: 0 auto;
   height: 56px;
   width: 100%;
@@ -36,6 +36,7 @@ body {
       color: #ffff; }
 
 .summary {
+  min-width: 900px;
   margin: 0 auto;
   height: 88px;
   width: 100%;
@@ -142,35 +143,31 @@ body {
 
 .btn-group {
   display: inline-block; }
-
-button {
-  clear: none;
-  float: left;
-  width: 176px;
-  height: 40px;
-  border: none;
-  color: #01ce9f;
-  text-transform: uppercase;
-  font-family: "Sourcesemibold";
-  font-size: 1rem;
-  background-color: #f1f3f5; }
-  button .b1 {
-    border-radius: 10px 0  0 10px; }
-  button .b2 {
-    border-radius: 4px 4px 0; }
-
-button:focus {
-  outline: none; }
-
-button:active {
-  background-color: #01ce9f;
-  color: #f1f3f5;
-  border: none; }
-
-button:hover {
-  background-color: #01ce9f;
-  color: #f1f3f5;
-  border: none; }
+  .btn-group button {
+    clear: none;
+    float: left;
+    width: 176px;
+    height: 40px;
+    border: none;
+    color: #01ce9f;
+    text-transform: uppercase;
+    font-family: "Sourcesemibold";
+    font-size: 1rem;
+    background-color: #f1f3f5; }
+  .btn-group button:focus {
+    outline: none; }
+  .btn-group button:active {
+    background-color: #01ce9f;
+    color: #f1f3f5;
+    border: none; }
+  .btn-group button:hover {
+    background-color: #01ce9f;
+    color: #f1f3f5;
+    border: none; }
+  .btn-group button.b1 {
+    border-radius: 4px 0  0 4px; }
+  .btn-group button.b2 {
+    border-radius: 0 4px 4px 0; }
 
 .callendar {
   position: relative;
@@ -231,10 +228,10 @@ button:hover {
     display: flex;
     margin: auto;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 16px;
     color: #868e95;
     font-family: "Sourceregular"; }
-    .top_list .top_usr_label .top_usr_label > div {
+    .top_list .top_usr_label .us {
       height: 40px;
       width: 25%;
       text-align: center; }
@@ -247,12 +244,13 @@ button:hover {
     border-radius: 4px;
     margin-bottom: 8px; }
     .top_list .top_row .top_cell div {
-      margin-left: 16px;
+      margin-left: 3%;
       margin-top: 8px; }
     .top_list .top_row .top_cell {
       display: flex;
       width: 25%;
-      height: 40px; }
+      height: 40px;
+      color: #222529; }
       .top_list .top_row .top_cell .cell_numb {
         width: 24px;
         height: 24px;
@@ -288,7 +286,8 @@ button:hover {
       margin-top: 12px;
       height: 40px;
       width: 25%;
-      text-align: center; }
+      text-align: center;
+      color: #222529; }
 
 .footer {
   height: 64px;
