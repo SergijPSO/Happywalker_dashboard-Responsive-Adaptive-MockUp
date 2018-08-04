@@ -8,14 +8,15 @@ body{
 margin:0;
 padding:0;
 background-color:$main_color;
+ min-width:320px;
 }
 //default style reset ends
-.content {
-    min-width:900px;
+.container {
+    min-width:320px;
     margin:0 auto;
 }
 .nav{
-    min-width:900px;  
+    ///min-width:900px;  
     margin: 0 auto;
     height: 56px;
     width: 100%;
@@ -43,11 +44,15 @@ background-color:$main_color;
             font-family:$main_semibold_font;
             font-size:1rem;
             color:#ffff;
-        }      
+        }  
+        .foto,.greeting{
+            @media screen and (min-width: 320px) and (max-width:480px) {
+                display:none;
+            }
+        } 
     }
 }
 .summary{
-    min-width:900px;  
     margin: 0 auto;
     height: 88px;
     width: 100%;
@@ -64,6 +69,7 @@ background-color:$main_color;
     }
 }
 .content{
+    min-width:320px;
     background-color: $main_color;
     .box{
         width:97%;
@@ -85,21 +91,29 @@ background-color:$main_color;
                 justify-content: space-between;
                 width: 97%;
                 margin: auto;
+                @media screen and (min-width: 320px) and (max-width:790px) {
+                    display:block;
+                }
                 .own_stats{
                     display:flex;
                     justify-content: space-between;
                     width: 50%;
                     height: 248px;
+                    @media screen and (min-width: 320px) and (max-width:480px) {
+                    display:block;
+                    width: 100%;
+                    }
+                    @media screen and (min-width: 481px) and (max-width:790px) {
+                    display:flex;
+                   width: 100%;
+                    }
                    .profile{
-                       //width:40%;
                        .pro_inf{
                         text-align: center;
                         width: 100%;
                        }
                        .pro_foto{
                            width: 100%;
-                           //width:;
-                          // height:;
                            border-radius:50%;
                            padding-bottom:16px;
                        }
@@ -119,28 +133,60 @@ background-color:$main_color;
                        }
                     }
                     .stats {
-                        margin-right: 10%;
+                        margin-right: 20%;
+                         @media screen and (min-width: 320px) and (max-width:/*480*/790px){
+                            display:flex;
+                            margin: inherit;
+                            padding-top: 20px;
+                            margin-right: 0 ;
+                        }
                         .graph{
+                            @media screen and (min-width: 320px) and (max-width:480px){
+                                margin:0 auto;
+                            }
                             .cell{
                                 display:flex;
-                                //width: ;
                                 height: 72px;
                                 margin:2px;
-                                img{
+                                .pict{
+                                    margin-right:2%;
+                                    img{
                                     width: 96px;
                                     height: 56px;
+                                    }
                                 }
                                 .item{
                                     padding-left:0;
                                     margin-top:0;
-                                    li{
-                                        list-style: none;
+                                    .title {
+                                        width: 130px;
                                     }
-                                    h3{
+                                    span{
                                         padding-left:0;
                                         margin:0;
                                         font-size:48px;
                                         font-family:$main_bold_font;
+                                        @media screen and (min-width: 320px) and (max-width:480px) {
+                                            font-size:10px;
+                                        }
+                                        @media screen and (min-width: 320px) and (max-width:480px){
+                                            font-size: 30px;
+                                        }
+                                         @media screen and (min-width: 320px) and (max-width:480px){
+                                            font-size: 30px;
+                                        }
+                                    }
+                                    .text span {
+                                        font-family:$main_bold_font;
+                                        text-transform: uppercase;
+                                        font-size:16px;
+                                        line-height:24px;
+                                        padding-left:0;
+                                        margin-top:0;
+                                        color:#868e95;
+                                    }
+                                    li{
+                                        list-style: none;
                                     }
                                     p{
                                     font-family:$main_bold_font;
@@ -160,6 +206,18 @@ background-color:$main_color;
                     width: 50%;
                     height: 248px;
                     padding-bottom:24px;
+                    @media screen and (min-width: 320px) and (max-width:480px){
+                        margin:0 auto;
+                        display:flex;
+                        width: 97%;
+                        padding-top:70%;
+                    }
+                    @media screen and (min-width: 481px) and (max-width:790px){
+                        width: 100%;
+                    }
+                    @media screen and (min-width: 791px) and (max-width:900px){
+                        width: 47%;
+                    }
                 }
             }
         }
@@ -176,6 +234,9 @@ background-color:$main_color;
                     font-family:$main_bold_font;
                     font-size:24px;
                     text-transform:uppercase;
+                    @media screen and (min-width: 380px) and (max-width:750px) {
+                    width: 25%;
+                    }
                 }
             }
         }   
@@ -184,6 +245,9 @@ background-color:$main_color;
 //button styles beggins
 .btn-group{
     display:inline-block;
+        @media screen and (min-width: 320px) and (max-width:480px) {
+        display:block;
+        }
     button{
         clear: none;
         float: left;
@@ -195,6 +259,11 @@ background-color:$main_color;
         font-family:$main_semibold_font;
         font-size:1rem;
         background-color:#f1f3f5;
+        @media screen and (min-width: 320px) and (max-width:750px) {
+         width: 90px;
+         height: 32px;
+         
+        }
     }
     button:focus{
         outline:none;
@@ -211,21 +280,30 @@ background-color:$main_color;
     }
     button.b1{
     border-radius: 4px 0  0 4px;
+    @media screen and (min-width: 320px) and (max-width:480px) {
+        border-radius:4px;
+        }
     }
     button.b2{
     border-radius: 0 4px 4px 0;
+    @media screen and (min-width: 320px) and (max-width:480px) {
+        border-radius:4px;
+        }
     }
 }
 //button styles
 // callendar styles
 .callendar {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  height: 40px;
-  width: 192px;
-  background-color: #f1f3f5ee;
-  border-radius:4px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 192px;
+    background-color: #f1f3f5ee;
+    border-radius:4px;
+    @media screen and (min-width: 320px) and (max-width:750px) {
+         width: 25%;
+        }
     p{  
         font-family: $main_regular_font;
         font-size:1rem;
@@ -245,6 +323,11 @@ background-color:$main_color;
         top:15px;
         right:5px;
         z-index: 1;
+         @media screen and (min-width: 320px) and (max-width:480px){
+            position: absolute;
+            background-color: #01ce9f;
+            width: 280px;
+        }
     }
 }
 .callendar:hover .callendar-content {
@@ -303,15 +386,25 @@ background-color:$main_color;
         margin:auto;
         border-radius:4px;
         margin-bottom:8px;
+        @media screen and (min-width: 320px) and (max-width:790px){
+            font-size:10px;
+        }
+        @media screen and (min-width: 790px) and (max-width:940px){
+            font-size:14px;
+        }
       .top_cell div{
-        margin-left:3%;
+        margin-left:12px;
         margin-top:8px;
+        @media screen and (min-width: 320px) and (max-width:940px){
+            margin-left:1%;
+        }
       }
         .top_cell{
             display:flex;
             width: 25%;
             height: 40px;
             color:#222529;
+            font-weight: 600;
             .cell_numb {
                 width: 24px;
                 height: 24px;
@@ -319,6 +412,10 @@ background-color:$main_color;
                 text-align:center;
                 line-height: 1.5;
                 color:#868e95;
+                @media screen and (min-width: 320px) and (max-width:790px){
+                display:none;
+                }
+
             }
             .orange{
                 background-color: #fec833;
@@ -337,14 +434,23 @@ background-color:$main_color;
                 height: 24px;
                 background-color:yellow;
                 border-radius:50px;
+                 @media screen and (min-width: 320px) and (max-width:1100px){
+                display:none;
+                }
             }
             .cell_star {
                 width: 24px;
                 height: 24px;
                 background-image: url("../img/star.png"); 
+                 @media screen and (min-width: 320px) and (max-width:480px){
+                display:none;
+                }
             }
             .cell_star:hover {
                 background-image: url("../img/starz.png");
+                @media screen and (min-width: 320px) and (max-width:480px){
+                 display:none;
+                }
             }
             .cell_name {
                 margin-top:12px;
@@ -358,6 +464,9 @@ background-color:$main_color;
             width: 25%;
             text-align:center;
             color:#222529;
+            @media screen and (min-width: 320px) and (max-width:790px){
+            font-size:10px;
+            }
         }
     }
 }
