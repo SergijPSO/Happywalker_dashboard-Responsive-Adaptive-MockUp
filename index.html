@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, minimum-scale">
+    <meta name="viewport" content="width=device-width, initial-scale ="minimum-scale">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <link href="css/jquery.daterangepicker.css" rel="stylesheet" />
     <title>happy walker</title>
 </head>
 <body>
@@ -83,7 +84,7 @@
                 </div>
             </div>
             <div class="top_wallkers">
-              
+
                 <div class="top_label">
                     <div class="top_h_text">top happy walkers</div>
 
@@ -93,13 +94,32 @@
 
                     </div>
                     <div class="callendar">
-                        <p>Today</p>
-                        <div class="d_arr">
-                            <img src="img/arrow.png" alt="arrow"/>
-                        </div>
-                        <div class="callendar-content">
-                            <h2>I am youre callendar</h2>
-                        </div>
+                        <form id="form" method="get">
+
+                            <div id="date_range_picker" class="date_range_picker">
+
+                                <div class="values">
+                                    <div class="value date_at">
+                                        <span class="date_at"></span>
+                                        <input id="date_at" class="date_at" type="hidden" />
+                                    </div>
+                                    <!-- <div class="to"></div> -->
+                                    <div class="value date_to">
+                                        <span class="date_to"></span>
+                                        <input id="date_to" class="date_to" type="hidden" />
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <div class="calendar">
+                                    <div class="button button-prev"></div>
+                                    <div class="button button-next"></div>
+                                    <div class="calendar-container"></div>
+                                </div>
+
+                            </div>
+
+                        </form>
                     </div>
                 </div>
 
@@ -295,7 +315,14 @@
         </div>
     </div>
     </div>
-
-
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.daterangepicker.js"></script>
+<script>
+    $(function () {
+        $.DateRangePicker({
+            container: '#date_range_picker'
+        });
+    });
+</script>
 </body>
 </html>
